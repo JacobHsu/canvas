@@ -77,7 +77,7 @@ Star.prototype.draw = function() {
   }
 
   ctx.globalAlpha = this.alpha;
-    ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+  ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
   this.timePassed += this.speed;
 }
 
@@ -96,7 +96,7 @@ function animation() {
     stars[i].draw();
   };  
   
-  window.requestAnimationFrame(animation);
+ window.requestAnimationFrame(animation);
 }
 
 animation();
